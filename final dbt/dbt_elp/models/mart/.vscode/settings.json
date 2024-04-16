@@ -1,0 +1,4 @@
+{
+    "dbt.queryLimit": 2000,
+    "dbt.queryScale": 1.02
+}

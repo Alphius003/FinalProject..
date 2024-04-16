@@ -1,0 +1,53 @@
+/* Style for the form container */
+form {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Style for form groups */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  /* Style for labels */
+  .form-group label {
+    font-weight: bold;
+  }
+  
+  /* Style for inputs */
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Style for submit button */
+  .form-group button[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  /* Style for submit button on hover */
+  .form-group button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style for optional fields when mode is online */
+  .form-group.optional-online {
+    display: none; /* Hide by default */
+  }
+  
+  /* Style for optional fields when mode is offline */
+  .form-group.optional-offline {
+    display: none; /* Hide by default */
+  }
+  

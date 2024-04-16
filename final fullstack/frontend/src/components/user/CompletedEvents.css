@@ -1,0 +1,11 @@
+.event-container-1 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .event-card-1 {
+    width:350px !important;
+    margin: 50px !important;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }

@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: top_skills
+    columns:
+      - name: primary_skill
+        tests:
+          - not_null
+          - accepted_values:
+              values:
+                - type: string
+      - name: user_count
+        tests:
+          - not_null
+          - accepted_values:
+              values:
+                - type: number
+                  value: ">=0"

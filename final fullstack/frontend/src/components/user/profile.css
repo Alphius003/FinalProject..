@@ -1,0 +1,22 @@
+.profile {
+    position:absolute;
+    top: 15%; 
+    left: 40%;
+    /* transform: translate(-50%, -50%); */
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.profile-content {
+    text-align: center;
+}
+
+.profile form {
+    display: flex;
+    flex-direction:column;
+
+}
+
+

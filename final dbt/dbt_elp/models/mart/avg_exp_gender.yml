@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: avg_experience
+    columns:
+      - name: gender
+        tests:
+          - unique
+      - name: avg_experience_years
+        tests:
+          - not_null
+          - accepted_values:
+              values:
+                - type: number
+                  value: ">0"

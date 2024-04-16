@@ -1,0 +1,73 @@
+version: 2
+
+models:
+  - name: merge_all
+    columns:
+      - name: user_id
+        tests:
+          - unique
+      - name: event_id
+        tests:
+          - unique
+      - name: event_name
+        tests:
+          - not_null
+          - accepted_values:
+              values:
+                - type: string
+      - name: first_name
+        tests:
+          - not_null
+          - accepted_values:
+              values:
+                - type: string
+      - name: last_name
+        tests:
+          - not_null
+          - accepted_values:
+              values:
+                - type: string
+      - name: date_of_birth
+        tests:
+          - not_null
+          - accepted_values:
+              values:
+                - type: date
+      - name: email
+        tests:
+          - not_null
+          - accepted_values:
+              values:
+                - type: string
+                - regex: '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
+      - name: gender
+        tests:
+          - not_null
+          - accepted_values:
+              values:
+                - type: string
+      - name: primary_skill
+        tests:
+          - not_null
+          - accepted_values:
+              values:
+                - type: string
+      - name: experience_years
+        tests:
+          - not_null
+          - accepted_values:
+              values:
+                - type: number
+                  value: ">=0"
+      - name: designation
+        tests:
+          - not_null
+          - accepted_values:
+              values:
+                - type: string
+      - name: role
+        tests:
+          - not_null
+          - accepted_values:
+              values:
+                - type: string

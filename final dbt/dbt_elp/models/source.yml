@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: data
+    database: EMPLOYEELEARNING
+    schema: users
+    tables:
+      - name: users
+      - name: events
+      - name: event_registration

@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: event_registrations
+    columns:
+      - name: event_id
+        tests:
+          - unique
+      - name: registrations_count
+        tests:
+          - not_null
+          - accepted_values:
+              values:
+                - type: number
+                  value: ">=0"
